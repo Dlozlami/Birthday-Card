@@ -24,7 +24,7 @@ const SlideItem = ({item}) => {
   return (
     <View style={styles.container}>
       <Animated.Image
-        source={item.img}
+        source={item.imgUrl}
         resizeMode="contain"
         style={[
           styles.image,
@@ -37,12 +37,6 @@ const SlideItem = ({item}) => {
           },
         ]}
       />
-
-      <View style={styles.content}>
-        <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.description}>{item.description}</Text>
-        <Text style={styles.price}>{item.price}</Text>
-      </View>
     </View>
   );
 };
@@ -56,7 +50,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   image: {
-    flex: 0.6,
+    flex: 1,
     width: '100%',
   },
   content: {

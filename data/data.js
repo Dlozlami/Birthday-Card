@@ -1,6 +1,6 @@
 const data = [
   {
-    msg:'ofdflkdfj',
+    msg:'test 1',
     imgUrl: require('./sideA.png'),
   },
   {
