@@ -1,25 +1,15 @@
-import React, {useRef} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  Text,
-  StyleSheet,
-  View,
-  ImageBackground,
-  Animated,
-  useWindowDimensions,
-} from 'react-native';
-import Slider from './components/slider';
+import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import Slider from './src/component/Slider';
 
-
-export default function App(){
-
-
+const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView>
       <Slider />
     </SafeAreaView>
   );
-}
+};
+
+export default App;
 
 const styles = StyleSheet.create({});
